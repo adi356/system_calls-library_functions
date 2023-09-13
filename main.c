@@ -121,10 +121,10 @@ int main(int argc, char **argv) {
     fgets(line, LINE_MAX, inputStream);
     } 
 
-    check_filePrint(fprintf(outputStream, "All childred used: "));
+    check_filePrint(fprintf(outputStream, "All childred were: "));
 
     for(int x = 0; x < childCount; x++) {
-        check_filePrint(fprintf(outputStream, "%d", pids[x]));
+        check_filePrint(fprintf(outputStream, "%d ", pids[x]));
     }
     check_filePrint(fprintf(outputStream, "\n"));
     fclose(outputStream);
