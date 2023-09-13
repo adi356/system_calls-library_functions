@@ -14,7 +14,6 @@
 
 struct Stack;
 
-//struct needs to reference itself?
 typedef struct Stack {
     int size;
     int capacity;
@@ -30,4 +29,5 @@ typedef struct Stack {
 }Stack;
 
 Stack createStack(Stack*, int);
-#endif //STACK_H
+
+#endif 

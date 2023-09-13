@@ -38,7 +38,7 @@ Stack createStack( Stack* stack, int capacity) {
 
 int pop(Stack* stack) {
     if(isEmpty(stack) == 1) {
-        fprintf(stderr,"process %d: Attempt to pop element off empty stack.\n", getpid());
+        fprintf(stderr,"process %d: Error - empty stack, can't pop element.\n", getpid());
         return INT_MIN;
     }
     return stack -> array[stack -> size--];
@@ -46,7 +46,7 @@ int pop(Stack* stack) {
 
 void push(Stack* stack, int number) {
     if(isFull(stack)) {
-        fprintf(stderr, "process %d: Attempt to push element into full stack.\n", getpid());
+        fprintf(stderr, "process %d: Error - full stack, can't push element.\n", getpid());
         printf("size: %d capacity: %d to be pushed: %d \n", stack -> size, stack -> capacity, number);
         abort();
     }

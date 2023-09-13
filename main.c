@@ -1,3 +1,13 @@
+/**
+ * @file main.c
+ * @author Andrew Irvine (adi356@umsystem.edu)
+ * @brief main file to run application, contains logic for command line arguments & reversing input
+ * @version 0.1
+ * @date 2023-09-12
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
