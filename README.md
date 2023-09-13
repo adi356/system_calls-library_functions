@@ -1,5 +1,9 @@
 # system_calls-library_functions
 4760 - Project 1
+To Run Project
+1. Go into project directory
+2. Type in 'make'
+3. ./reverse [-h] [-i inputFileName] [-o outputFileName]
 
 The goal of this project is to become familiar
 with the environment in opsys while practicing system calls. You will also demonstrate your proficiency in the use of perror

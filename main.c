@@ -32,6 +32,7 @@ int main(int argc, char **argv) {
     opterr = 0;
 
     //command line arguments logic
+    //!TODO: getting weird output when calling -h
     while((x = getopt(argc, argv, "hi:o:")) != -1) {
         switch(x) {
             case 'h':
@@ -99,7 +100,7 @@ int main(int argc, char **argv) {
 
             char* token = strtok(line, " ");
 
-            //!TODO!: having problem here
+            //!TODO: having problem here
             while(token != NULL) {
                 stack.push(&stack, atoi(token));
                 token = strtok(NULL, " ");
@@ -123,6 +124,7 @@ int main(int argc, char **argv) {
 
     check_filePrint(fprintf(outputStream, "All childred were: "));
 
+    //print child pids
     for(int x = 0; x < childCount; x++) {
         check_filePrint(fprintf(outputStream, "%d ", pids[x]));
     }
